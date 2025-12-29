@@ -1,6 +1,5 @@
 import css from "./Header.module.css";
 import { Link } from "react-router-dom";
-import Registration from "../Registration/Registration";
 
 export default function Header() {
   return (
@@ -26,7 +25,12 @@ export default function Header() {
           </ul>
         </nav>
         <div className={css.registration}>
-          <Registration />
+          <button className={css.btn_log} type="button">
+            Log In
+          </button>
+          <button className={css.btn_registration} type="button">
+            Registration
+          </button>
         </div>
       </div>
     </div>

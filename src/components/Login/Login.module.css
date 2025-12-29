@@ -1,4 +1,4 @@
-.registration {
+.login {
   padding: 64px;
   position: relative;
   background: #fbfbfb;
@@ -12,14 +12,14 @@
   right: 20px;
 }
 
-.registration_info {
+.login_info {
   max-width: 438px;
   display: flex;
   gap: 20px;
   justify-content: start;
 }
 
-.registration_title {
+.login_title {
   font-weight: 500;
   font-size: 40px;
   line-height: 120%;
@@ -27,7 +27,7 @@
   color: #11101c;
 }
 
-.registration_text {
+.login_text {
   font-weight: 400;
   font-size: 16px;
   line-height: 125%;
@@ -49,4 +49,15 @@
   padding-left: 18px;
   max-width: 438px;
   max-height: 52px;
+}
+
+.btn_login {
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 125%;
+  letter-spacing: -0.01em;
+  color: #fbfbfb;
+  background: #f03f3b;
+  border-radius: 30px;
+  padding: 16px 196px;
 }

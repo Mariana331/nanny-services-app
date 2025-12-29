@@ -1,23 +1,35 @@
 .header {
-  padding: 20px 96px;
+  padding: 20px clamp(16px, 6vw, 96px);
   display: flex;
+  justify-content: space-between;
+  align-items: center;
+  z-index: 2;
+  position: fixed;
+  width: 100%;
+  background-color: transparent;
+  box-sizing: border-box;
+  border-bottom: 1px solid rgba(251, 251, 251, 0.4);
 }
 
-.logo {
-  padding: 10px 0;
+.logo_text {
   font-weight: 500;
   font-size: 24px;
   line-height: 117%;
   letter-spacing: -0.02em;
-  /* color: #fbfbfb; */
-  margin-right: 487px;
+  color: #fbfbfb;
+  text-decoration: none;
+}
+
+.menu {
+  display: flex;
+  align-items: center;
+  gap: 92px;
 }
 
 .navigation {
   display: flex;
-  flex-direction: row;
   gap: 40px;
-  padding: 14px 0;
+  margin: 0;
 }
 
 .nav_text {
@@ -25,6 +37,6 @@
   font-size: 16px;
   line-height: 125%;
   letter-spacing: -0.01em;
-  /* color: #fbfbfb; */
-  margin-right: 92px;
+  color: #fbfbfb;
+  text-decoration: none;
 }

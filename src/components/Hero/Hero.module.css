@@ -1,0 +1,120 @@
+.hero {
+  display: flex;
+  border-radius: 30px;
+  overflow: hidden;
+}
+
+.hero_left {
+  background: #f03f3b;
+  display: flex;
+  flex-direction: column;
+  padding-top: clamp(40px, 7vw, 106px);
+  padding-bottom: clamp(80px, 12vw, 220px);
+  padding-left: clamp(20px, 10vw, 141px);
+  padding-right: clamp(16px, 4vw, 19px);
+}
+
+.hero_left,
+.hero_right {
+  flex: 1;
+}
+
+.title {
+  font-weight: 500;
+  font-size: 70px;
+  line-height: 100%;
+  letter-spacing: -0.03em;
+  color: #fbfbfb;
+  max-width: 517px;
+  margin-bottom: 28px;
+}
+
+.text {
+  font-weight: 400;
+  font-size: 28px;
+  line-height: 107%;
+  letter-spacing: -0.02em;
+  color: #fbfbfb;
+  margin-bottom: 64px;
+}
+
+.btn {
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 120%;
+  letter-spacing: -0.01em;
+  color: #fbfbfb;
+  border: 1px solid rgba(251, 251, 251, 0.4);
+  border-radius: 30px;
+  padding: 18px 50px;
+  width: 230px;
+  height: 60px;
+  background-color: transparent;
+}
+
+.spn {
+  margin-left: 5px;
+}
+
+.hero_right {
+  position: relative;
+  padding-top: clamp(200px, 35vw, 480px);
+  padding-right: clamp(20px, 5vw, 50px);
+  padding-bottom: clamp(20px, 5vw, 50px);
+  padding-left: clamp(20px, 25vw, 365px);
+  background-image: url(/HeroImages/Rectangle-1-min.jpg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+
+@media screen and (min-resolution: 2dppx) {
+  .hero_right {
+    background-image: url(/HeroImages/Rectangle-2-min.jpg);
+  }
+}
+
+.badge {
+  padding: 32px;
+  display: flex;
+  border-radius: 20px;
+  background: #fbfbfb;
+  display: flex;
+  align-items: center;
+  gap: 16px;
+  position: absolute;
+  right: 50px;
+  bottom: 50px;
+}
+
+.badge_icon {
+  border-radius: 13px;
+  width: 54px;
+  height: 54px;
+  background: #f03f3b;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.badge_text {
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+}
+
+.badge_text_nannies {
+  font-weight: 400;
+  font-size: 16px;
+  color: rgba(17, 16, 28, 0.5);
+  line-height: 1.2;
+  margin-top: 0;
+  margin-bottom: 0;
+}
+
+.badge_text_span {
+  font-weight: 700;
+  font-size: 24px;
+  color: #11101c;
+  line-height: 1.1;
+}

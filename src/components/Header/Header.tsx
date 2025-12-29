@@ -10,23 +10,25 @@ export default function Header() {
           Nanny.Services
         </Link>
       </div>
-      <nav className={css.nav}>
-        <ul className={css.navigation}>
-          <li>
-            <Link className={css.nav_text} to="/">
-              Home
-            </Link>
-          </li>
-          <li>
-            <Link className={css.nav_text} to="/nannies">
-              Nannies
-            </Link>
-          </li>
-          <li>
-            <Registration />
-          </li>
-        </ul>
-      </nav>
+      <div className={css.menu}>
+        <nav className={css.nav}>
+          <ul className={css.navigation}>
+            <li>
+              <Link className={css.nav_text} to="/">
+                Home
+              </Link>
+            </li>
+            <li>
+              <Link className={css.nav_text} to="/nannies">
+                Nannies
+              </Link>
+            </li>
+          </ul>
+        </nav>
+        <div className={css.registration}>
+          <Registration />
+        </div>
+      </div>
     </div>
   );
 }

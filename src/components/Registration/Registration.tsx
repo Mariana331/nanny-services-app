@@ -4,8 +4,8 @@ export default function Registration() {
   return (
     <div className={css.registration}>
       <button className={css.btn_close} aria-label="Close modal">
-        <svg width={19} height={19}>
-          <use href="/public/sprite.svg#icon-x"></use>
+        <svg width={19} height={19} className={css.close_icon}>
+          <use href="/sprite.svg#icon-x"></use>
         </svg>
       </button>
       <div className={css.registration_info}>

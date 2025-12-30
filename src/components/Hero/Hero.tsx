@@ -4,11 +4,17 @@ export default function Hero() {
   return (
     <div className={css.hero}>
       <div className={css.hero_left}>
-        <h1 className={css.title}>Make Life Easier for the Family:</h1>
-        <p className={css.text}>Find Babysitters Online for All Occasions</p>
-        <button className={css.btn}>
-          Get started<span className={css.spn}>↗</span>
-        </button>
+        <div className={css.left_inner}>
+          <div className={css.inner_text}>
+            <h1 className={css.title}>Make Life Easier for the Family:</h1>
+            <p className={css.text}>
+              Find Babysitters Online for All Occasions
+            </p>
+          </div>
+          <button className={css.btn}>
+            Get started<span className={css.spn}>↗</span>
+          </button>
+        </div>
       </div>
       <div className={css.hero_right}>
         <div className={css.badge}>

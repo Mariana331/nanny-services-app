@@ -5,10 +5,21 @@
   overflow: hidden;
 }
 
-.hero_left {
-  background: #f03f3b;
+.left_inner {
+  max-width: 517px;
   display: flex;
   flex-direction: column;
+  gap: 64px;
+}
+
+.inner_text {
+  display: flex;
+  flex-direction: column;
+  gap: 28px;
+}
+
+.hero_left {
+  background: #f03f3b;
   padding-top: clamp(40px, 7vw, 106px);
   padding-bottom: clamp(80px, 12vw, 220px);
   padding-left: clamp(20px, 10vw, 141px);
@@ -17,7 +28,8 @@
 
 .hero_left,
 .hero_right {
-  flex: 1;
+  flex: 1 1 50%;
+  min-width: 0;
 }
 
 .title {
@@ -26,8 +38,7 @@
   line-height: 100%;
   letter-spacing: -0.03em;
   color: #fbfbfb;
-  max-width: 517px;
-  margin-bottom: 28px;
+  margin: 0;
 }
 
 .text {
@@ -36,7 +47,7 @@
   line-height: 107%;
   letter-spacing: -0.02em;
   color: #fbfbfb;
-  margin-bottom: 64px;
+  margin: 0;
 }
 
 .btn {
@@ -51,6 +62,7 @@
   width: 230px;
   height: 60px;
   background-color: transparent;
+  cursor: pointer;
 }
 
 .spn {
@@ -59,10 +71,7 @@
 
 .hero_right {
   position: relative;
-  padding-top: clamp(200px, 35vw, 480px);
-  padding-right: clamp(20px, 5vw, 50px);
-  padding-bottom: clamp(20px, 5vw, 50px);
-  padding-left: clamp(20px, 25vw, 365px);
+  padding: clamp(40px, 5vw, 80px);
   background-image: url(/HeroImages/Rectangle-1-min.jpg);
   background-repeat: no-repeat;
   background-position: center;

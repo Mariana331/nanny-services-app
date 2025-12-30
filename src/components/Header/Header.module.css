@@ -4,7 +4,10 @@
   justify-content: space-between;
   align-items: center;
   z-index: 2;
-  position: fixed;
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
   width: 100%;
   background-color: transparent;
   box-sizing: border-box;
@@ -56,6 +59,7 @@
   border-radius: 30px;
   padding: 14px 39px;
   background: transparent;
+  cursor: pointer;
 }
 
 .btn_registration {
@@ -67,6 +71,7 @@
   border-radius: 30px;
   padding: 14px 40px;
   background: #f03f3b;
+  cursor: pointer;
 }
 
 .btn_registration:hover {
@@ -83,4 +88,5 @@
   background: #f03f3b;
   border-radius: 30px;
   padding: 16px 196px;
+  cursor: pointer;
 }

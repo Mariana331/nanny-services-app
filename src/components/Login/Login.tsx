@@ -1,11 +1,11 @@
-import css from "./ModalLogin.module.css";
+import css from "./Login.module.css";
 
 export default function Login() {
   return (
     <div className={css.login}>
       <button className={css.btn_close} aria-label="Close modal">
-        <svg width={19} height={19}>
-          <use href="/public/sprite.svg#icon-x"></use>
+        <svg width={19} height={19} className={css.close_icon}>
+          <use href="/sprite.svg#icon-x"></use>
         </svg>
       </button>
       <div className={css.login_info}>

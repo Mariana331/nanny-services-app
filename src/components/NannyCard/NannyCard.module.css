@@ -6,15 +6,15 @@
 
 .favorite_icon {
   position: absolute;
-  top: 0;
-  right: 0;
+  top: 24px;
+  right: 24px;
   display: block;
 }
 
 .image_box {
   position: absolute;
-  top: 0;
-  left: 0;
+  top: 24px;
+  left: 24px;
   border: 2px solid rgba(240, 63, 59, 0.2);
   border-radius: 30px;
   padding: 12px;
@@ -26,8 +26,8 @@
 
 .box_name {
   position: absolute;
-  top: 0;
-  left: 144px;
+  top: 24px;
+  left: 168px;
 }
 
 .box_name_text {
@@ -39,8 +39,8 @@
 
 .box_block {
   position: absolute;
-  top: 0;
-  right: 74px;
+  top: 24px;
+  right: 98px;
   display: flex;
   gap: 16px;
 }
@@ -54,7 +54,167 @@
   display: block;
 }
 
+.block_text {
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 150%;
+  color: #11101c;
+  margin: 0;
+}
+
 .rating {
   display: flex;
   gap: 4px;
+}
+
+.span_green {
+  color: #38cd3e;
+}
+
+.age {
+  position: absolute;
+  top: 104px;
+  left: 168px;
+  background: #f3f3f3;
+  border-radius: 24px;
+  padding: 8px 16px;
+  max-height: 40px;
+}
+
+.private_text {
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 150%;
+  color: #8a8a89;
+}
+
+.span_age {
+  text-decoration: underline;
+  text-decoration-skip-ink: none;
+  color: #11101c;
+}
+
+.experience {
+  position: absolute;
+  top: 104px;
+  left: 264px;
+  background: #f3f3f3;
+  border-radius: 24px;
+  padding: 8px 16px;
+  max-height: 40px;
+}
+
+.kids_age {
+  position: absolute;
+  top: 104px;
+  left: 449px;
+  background: #f3f3f3;
+  border-radius: 24px;
+  padding: 8px 16px;
+  max-height: 40px;
+}
+
+.characters {
+  position: absolute;
+  top: 104px;
+  left: 678px;
+  background: #f3f3f3;
+  border-radius: 24px;
+  padding: 8px 16px;
+  max-height: 40px;
+}
+
+.education {
+  position: absolute;
+  top: 152px;
+  left: 168px;
+  background: #f3f3f3;
+  border-radius: 24px;
+  padding: 8px 16px;
+  max-height: 40px;
+}
+
+.about {
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 125%;
+  color: rgba(17, 16, 28, 0.5);
+}
+
+.review {
+  position: absolute;
+  top: 304px;
+  left: 168px;
+  display: flex;
+  flex-direction: column;
+  gap: 25px;
+}
+
+.review_info {
+}
+
+.review_name {
+  display: flex;
+  gap: 12px;
+}
+
+.name_one_letter {
+  border-radius: 100px;
+  width: 44px;
+  height: 44px;
+  background: rgba(240, 63, 59, 0.2);
+}
+
+.name_one_text {
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 100%;
+  color: #f03f3b;
+}
+
+.name_full {
+  position: relative;
+}
+
+.name_full_icon {
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  display: block;
+}
+
+.name_full_text {
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 150%;
+  color: #11101c;
+  margin: 0;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+.btn {
+  position: absolute;
+  top: 537px;
+  left: 168px;
+}
+
+.card_btn {
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 125%;
+  letter-spacing: -0.01em;
+  color: #fbfbfb;
+  border-radius: 30px;
+  padding: 14px 28px;
+  width: 215px;
+  height: 48px;
+  background: #f03f3b;
+  cursor: pointer;
+}
+
+.card_btn:hover {
+  color: #f03f3b;
+  background: #fbfbfb;
 }

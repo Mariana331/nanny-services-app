@@ -1,13 +1,13 @@
 import Header from "../Header/Header";
 import Hero from "../Hero/Hero";
-import NannyCard from "../NannyCard/NannyCard";
+import Appointment from "../Appointment/Appointment";
 
 function App() {
   return (
     <>
       <Header />
       <Hero />
-      <NannyCard />
+      <Appointment />
     </>
   );
 }

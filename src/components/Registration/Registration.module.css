@@ -88,4 +88,10 @@
   border-radius: 30px;
   border: none;
   cursor: pointer;
+  outline: none;
+}
+
+.btn_signup:hover {
+  color: #f03f3b;
+  background: #fbfbfb;
 }

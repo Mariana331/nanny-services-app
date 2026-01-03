@@ -212,9 +212,24 @@
   height: 48px;
   background: #f03f3b;
   cursor: pointer;
+  border: none;
 }
 
 .card_btn:hover {
   color: #f03f3b;
   background: #fbfbfb;
+}
+
+.brn_more {
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 150%;
+  text-decoration: underline;
+  text-decoration-skip-ink: none;
+  color: #11101c;
+  position: absolute;
+  top: 270px;
+  left: 168px;
+  border: none;
+  background: transparent;
 }

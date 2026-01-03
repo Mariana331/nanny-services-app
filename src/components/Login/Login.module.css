@@ -88,4 +88,10 @@
   border-radius: 30px;
   border: none;
   cursor: pointer;
+  border: none;
+}
+
+.btn_login:hover {
+  color: #f03f3b;
+  background: #fbfbfb;
 }

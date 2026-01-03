@@ -72,6 +72,7 @@
   padding: 14px 40px;
   background: #f03f3b;
   cursor: pointer;
+  border: none;
 }
 
 .btn_registration:hover {
@@ -79,14 +80,7 @@
   background: #fbfbfb;
 }
 
-.btn_signup {
-  font-weight: 500;
-  font-size: 16px;
-  line-height: 125%;
-  letter-spacing: -0.01em;
-  color: #fbfbfb;
-  background: #f03f3b;
-  border-radius: 30px;
-  padding: 16px 196px;
-  cursor: pointer;
+.btn_log:hover {
+  color: #f03f3b;
+  background: #fbfbfb;
 }

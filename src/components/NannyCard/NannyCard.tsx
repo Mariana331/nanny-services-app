@@ -88,6 +88,9 @@ export default function NannyCard() {
           Make an appointment
         </button>
       </div>
+      <button type="button" className={css.brn_more}>
+        Read more
+      </button>
     </div>
   );
 }

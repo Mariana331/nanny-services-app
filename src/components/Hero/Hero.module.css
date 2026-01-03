@@ -65,6 +65,11 @@
   cursor: pointer;
 }
 
+.btn:hover {
+  color: #f03f3b;
+  background: #fbfbfb;
+}
+
 .spn {
   margin-left: 5px;
 }

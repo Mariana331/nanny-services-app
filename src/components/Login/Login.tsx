@@ -1,6 +1,37 @@
 import css from "./Login.module.css";
+import * as Yup from "yup";
+import { useForm } from "react-hook-form";
+import { yupResolver } from "@hookform/resolvers/yup";
+
+interface LoginFormData{
+  email: string;
+  password: string;
+};
+
+const Schema = Yup.object().shape({
+  email: Yup.string()
+    .email("Invalid email format")
+    .required("Email is required!"),
+  password: Yup.string()
+    .min(8, "Minimum 8 characters")
+    .max(128, "Maximum 8 characters")
+    .required("Password required!"),
+});
+
 
 export default function Login() {
+  const {
+    register,
+    handleSubmit,
+    formState: { errors },
+  } = useForm<LoginFormData>({
+    resolver: yupResolver(Schema),
+  });
+
+  const onSubmit = (data: LoginFormData) => {
+    console.log(data);
+  };
+
   return (
     <div className={css.login}>
       <button className={css.btn_close} aria-label="Close modal">
@@ -15,10 +46,22 @@ export default function Login() {
           continue your babysitter search.
         </p>
       </div>
-      <div className={css.form}>
-        <input className={css.input} type="email" placeholder="Email" />
-        <input className={css.input} type="password" placeholder="Password" />
-      </div>
+      <form className={css.form} onSubmit={handleSubmit(onSubmit)}>
+        <input
+          {...register("email")}
+          className={css.input}
+          type="email"
+          placeholder="Email"
+        />
+        <p>{errors.email?.message}</p>
+        <input
+          {...register("password")}
+          className={css.input}
+          type="password"
+          placeholder="Password"
+        />
+        <p>{errors.password?.message}</p>
+      </form>
       <button className={css.btn_login}>Log In</button>
     </div>
   );

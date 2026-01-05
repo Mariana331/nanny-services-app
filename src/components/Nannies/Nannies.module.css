@@ -1,0 +1,21 @@
+.nannies {
+  background: #f3f3f3;
+}
+
+.btn {
+  border-radius: 30px;
+  padding: 14px 40px;
+  background: #f03f3b;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 125%;
+  letter-spacing: -0.01em;
+  color: #fbfbfb;
+  cursor: pointer;
+  border: none;
+}
+
+.btn:hover {
+  color: #f03f3b;
+  background: #fbfbfb;
+}

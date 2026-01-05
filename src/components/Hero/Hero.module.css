@@ -3,6 +3,7 @@
   flex-wrap: wrap;
   border-radius: 30px;
   overflow: hidden;
+  margin: 0 auto;
 }
 
 .left_inner {
@@ -20,10 +21,9 @@
 
 .hero_left {
   background: #f03f3b;
-  padding-top: clamp(40px, 7vw, 106px);
-  padding-bottom: clamp(80px, 12vw, 220px);
-  padding-left: clamp(20px, 10vw, 141px);
-  padding-right: clamp(16px, 4vw, 19px);
+  padding-top: 251px;
+  padding-bottom: 163px;
+  padding-left: 96px;
 }
 
 .hero_left,
@@ -59,8 +59,7 @@
   border: 1px solid rgba(251, 251, 251, 0.4);
   border-radius: 30px;
   padding: 18px 50px;
-  width: 230px;
-  height: 60px;
+  max-width: 230px;
   background-color: transparent;
   cursor: pointer;
 }

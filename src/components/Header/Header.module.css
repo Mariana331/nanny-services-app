@@ -1,5 +1,5 @@
 .header {
-  padding: 20px clamp(16px, 6vw, 96px);
+  padding: 20px 96px;
   display: flex;
   justify-content: space-between;
   align-items: center;

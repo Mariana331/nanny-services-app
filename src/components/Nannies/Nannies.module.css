@@ -1,5 +1,6 @@
 .nannies {
   background: #f3f3f3;
+  padding: 90px 128px 100px 128px;
 }
 
 .btn {
@@ -13,6 +14,8 @@
   color: #fbfbfb;
   cursor: pointer;
   border: none;
+  display: block;
+  margin: 0 auto;
 }
 
 .btn:hover {

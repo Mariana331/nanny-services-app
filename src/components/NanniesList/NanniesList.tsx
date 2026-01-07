@@ -1,12 +1,16 @@
 import css from "./NanniesList.module.css";
-// import NannyCard from "../NannyCard/NannyCard";
+import NannyCard from "../NannyCard/NannyCard";
+import type { Nanny } from "../../types/types";
 
-export default function NanniesList() {
+interface NanniesListProps {
+  nannies: Nanny[];
+}
+export default function NanniesList({ nannies }: NanniesListProps) {
   return (
     <div className={css.nannies_list}>
-      {/* {nannies.map((nanny) => (
-        <NannyCard key={nanny.id} nanny={nanny} /> */}
-      {/* ))} */}
+      {nannies.map((nanny) => (
+        <NannyCard key={nanny.id} nanny={nanny} />
+      ))}
     </div>
   );
 }

@@ -1,4 +1,5 @@
 export type Nanny = {
+  id: string;
   name: string;
   avatar_url: string;
   birthday: string;
@@ -14,7 +15,9 @@ export type Nanny = {
 };
 
 export type Review = {
-  author: string;
-  text: string;
+  reviewer: string;
   rating: number;
+  comment: string;
 };
+
+export type NannyDoc = Omit<Nanny, "id">;
